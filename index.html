@@ -36,8 +36,30 @@
         <br>
         <h2>L'entreprise a-t-elle été signaléé ?</h2>
         <p>Il y a eu plusieurs tentatives de signalement hélas cela n'empêche pas le gérant de l'entreprise d'en créer une autre. Des avis négatifs ont été publiés à l'encontre de l'entreprise mais les avis sont très souvent supprimés par le gérant.</p>
-        
     </section>
+
+        <!-- Formulaire de contact intégré -->
+    <section id="contact-form">
+        <h2>Contactez-moi</h2>
+        <form action="https://formsubmit.co/labeetrine@gmail.com" method="POST">
+            
+            <!-- Champs cachés -->
+            <input type="hidden" name="_subject" value="Nouveau message depuis le site">
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- Champs du formulaire -->
+            <label for="name">Prénom</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+     </section>
 </main>
 
 <footer>
